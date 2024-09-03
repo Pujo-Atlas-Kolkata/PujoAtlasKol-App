@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app.dart';
+import 'l10n/l10n.dart';
 
 void main() {
   runApp(const AppView());
@@ -17,6 +18,8 @@ class AppView extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: const PujoAtlasApp(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );
