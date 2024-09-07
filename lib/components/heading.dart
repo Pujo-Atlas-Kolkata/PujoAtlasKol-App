@@ -19,7 +19,7 @@ class Heading extends StatelessWidget {
             child: Container(
               width: 50 * width,
               child: const Text(
-                'Subuho \nSarodi...',
+                'Subho \nSarodiya',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
