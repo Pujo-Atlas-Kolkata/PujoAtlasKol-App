@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'splash.dart';
 import 'app.dart';
 
 void main() {
@@ -17,7 +18,12 @@ class AppView extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const PujoAtlasApp(title: 'Flutter Demo Home Page'),
+      initialRoute: '/splash',
+      routes: {
+        '/splash': (context) => SplashScreen(),
+        '/': (context) => const PujoAtlasApp(title: "Flutter Demo Home Page")
+      },
+      // home: const PujoAtlasApp(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
     );
   }
